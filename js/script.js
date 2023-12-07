@@ -1,5 +1,5 @@
 
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://be-2-section-surabaya-group-29-production.up.railway.app';
 
 async function fetchNews() {
     const newsList = document.getElementById('judul-berita');
@@ -7,10 +7,8 @@ async function fetchNews() {
         const response = await fetch(`${API_BASE_URL}/berita`)
         const news = await response.json();
         console.log(news);
-        const newsListElement  = news.map((news) => {
-            return `
-            ${news.judul}
-            `
+        const newsListElement  = news.map((newsItem) => {
+            return `<li>${newsItem.judul}</li>`;
         });
 
         newsList.innerHTML = newsListElement;
