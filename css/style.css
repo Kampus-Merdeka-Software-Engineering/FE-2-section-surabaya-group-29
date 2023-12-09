@@ -11,7 +11,7 @@ body {
 }
 
 .home .div {
-    background-color: #ffffff;
+    background-color: white;
     overflow: hidden;
     width: 1280px;
     height: 1080px;
@@ -248,6 +248,7 @@ body {
     line-height: normal;
 }
 
+
 .home .text-wrapper-11 {
     position: absolute;
     width: 68px;
@@ -404,7 +405,7 @@ body {
 
 .home .PROJECT-SOFTWARE {
     position: absolute;
-    width: 300px;
+    width: 310px;
     top: 42px;
     left: 0;
     font-family: "Inter-Bold", Helvetica;
@@ -417,6 +418,7 @@ body {
 
 .home .span {
     font-weight: 700;
+    color :#000000;
 }
 
 .home .text-wrapper-17 {
@@ -431,7 +433,7 @@ body {
 
 .home .PROJECT-SOFTWARE-2 {
     position: absolute;
-    width: 300px;
+    width: 310px;
     top: 240px;
     left: 0;
     font-family: "Inter-Bold", Helvetica;
@@ -2053,17 +2055,23 @@ a{
     text-decoration: none;
 }
 
-a:link{
-    color: black;
-}
-a:hover{
+a:hover {
     text-decoration: underline;
+}
+
+.text-white{
+    color:white !important;
+}
+
+.text-black{
+    color:black !important;
 }
 
 .rapi{
     padding-top: 30px;
     font-size: 12px;
     margin-left: -80px;
+    color: #ffffff;
 }
 
 .copy{
@@ -2075,4 +2083,9 @@ a:hover{
 .hitam{
     color: #000000;
     text-decoration: none;
+}
+
+.rapi a{
+    color:#ffffff;
+    
 }

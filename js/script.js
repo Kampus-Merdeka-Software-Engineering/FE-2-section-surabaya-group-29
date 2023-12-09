@@ -9,16 +9,15 @@ async function fetchNews() {
         console.log(news);
 
         const NewsList1 = document.getElementById('judul-berita-1');
-        NewsList1.innerHTML = `<a href="news.html">${news[0].judul}</a>`;
+        NewsList1.innerHTML = `<a class="text-white" href="news.html">${news[0].judul}</a>`;
 
         const NewsList2 = document.getElementById('judul-berita-2');
-        NewsList2.innerHTML = `<a href="news.html">${news[1].judul}</a>`;
+        NewsList2.innerHTML = `<a class="text-black" href="news.html">${news[1].judul}</a>`;
 
         const NewsList3 = document.getElementById('judul-berita-3');
-        NewsList3.innerHTML = `<a href="news.html">${news[2].judul}</a>`;
-
+        NewsList3.innerHTML = `<a class="text-black" href="news.html">${news[2].judul}</a>`;
         const Foto1 = document.getElementById('foto1');
-        Foto1.innerHTML = `<img class="rectangle-3" src="${news[2].foto}" />`
+        Foto1.innerHTML = `<img class="rectangle-3" src="${news[2].foto}" />
     } catch(err) {
         console.error(err);
     }
@@ -60,25 +59,25 @@ async function fetchCategory() {
         Lifestyle.addEventListener('click', () => {
             passUrl(category[3].id);
         });
-        Lifestyle.innerHTML = `<a href="category.html">${category[3].cat_name}</a>`;
+        Lifestyle.innerHTML = `<a class="text-white" href="category.html">${category[3].cat_name}</a>`;
 
         const Tech = document.getElementById('category5');
         Tech.addEventListener('click', () => {
             passUrl(category[4].id);
         });
-        Tech.innerHTML = `<a href="category.html">${category[4].cat_name}</a>`;
+        Tech.innerHTML = `<a class="text-white href="category.html">${category[4].cat_name}</a>`;
 
         const Entertainment = document.getElementById('category6');
         Entertainment.addEventListener('click', () => {
             passUrl(category[5].id);
         });
-        Entertainment.innerHTML = `<a href="category.html">${category[5].cat_name}</a>`;
+        Entertainment.innerHTML = `<a class="text-white href="category.html">${category[5].cat_name}</a>`;
 
         const Health = document.getElementById('category7');
         Health.addEventListener('click', () => {
             passUrl(category[6].id);
         });
-        Health.innerHTML = `<a href="category.html">${category[6].cat_name}</a>`;
+        Health.innerHTML = `<a class="text-white href="category.html">${category[6].cat_name}</a>`;
     } catch(err) {
         console.error(err);
     }
