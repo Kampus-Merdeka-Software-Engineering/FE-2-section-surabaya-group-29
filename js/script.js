@@ -16,11 +16,12 @@ async function fetchNews() {
 
         const NewsList3 = document.getElementById('judul-berita-3');
         NewsList3.innerHTML = `<a href="news.html">${news[2].judul}</a>`;
+
+        const Foto1 = document.getElementById('foto1');
+        Foto1.innerHTML = `<img class="rectangle-3" src="${news[2].foto}" />`
     } catch(err) {
         console.error(err);
     }
-
-    
 };
 
 fetchNews();

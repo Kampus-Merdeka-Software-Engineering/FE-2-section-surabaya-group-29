@@ -131,6 +131,7 @@ body {
     font-size: 25px;
     letter-spacing: 0;
     line-height: normal;
+    
 }
 
 .home .text-wrapper-5 {
@@ -403,7 +404,7 @@ body {
 
 .home .PROJECT-SOFTWARE {
     position: absolute;
-    width: 355px;
+    width: 300px;
     top: 42px;
     left: 0;
     font-family: "Inter-Bold", Helvetica;
@@ -430,7 +431,7 @@ body {
 
 .home .PROJECT-SOFTWARE-2 {
     position: absolute;
-    width: 355px;
+    width: 300px;
     top: 240px;
     left: 0;
     font-family: "Inter-Bold", Helvetica;
@@ -2047,12 +2048,15 @@ body {
     padding-top: 2.6px;
 }
 
+
 a{
     text-decoration: none;
-    color: white;
 }
 
-a:hover {
+a:link{
+    color: black;
+}
+a:hover{
     text-decoration: underline;
 }
 
@@ -2068,6 +2072,7 @@ a:hover {
     margin-left: 1220px;
 }
 
-.a2{
+.hitam{
     color: #000000;
+    text-decoration: none;
 }
