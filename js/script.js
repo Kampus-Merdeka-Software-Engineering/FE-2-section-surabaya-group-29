@@ -16,8 +16,18 @@ async function fetchNews() {
 
         const NewsList3 = document.getElementById('judul-berita-3');
         NewsList3.innerHTML = `<a class="text-black" href="news.html">${news[2].judul}</a>`;
+
         const Foto1 = document.getElementById('foto1');
-        Foto1.innerHTML = `<img class="rectangle-3" src="${news[2].foto}" />
+        Foto1.src = `${news[0].foto}`;
+
+        const Foto2 = document.getElementById('foto2');
+        Foto2.src = `${news[1].foto}`;
+
+        const Foto3 = document.getElementById('foto3');
+        Foto3.src = `${news[2].foto}`;
+
+        const Foto4 = document.getElementById('foto4');
+        Foto4.src = `${news[3].foto}`;
     } catch(err) {
         console.error(err);
     }
@@ -59,7 +69,7 @@ async function fetchCategory() {
         Lifestyle.addEventListener('click', () => {
             passUrl(category[3].id);
         });
-        Lifestyle.innerHTML = `<a class="text-white" href="category.html">${category[3].cat_name}</a>`;
+        Lifestyle.innerHTML = `<a class="text-white">${category[3].cat_name}</a>`;
 
         const Tech = document.getElementById('category5');
         Tech.addEventListener('click', () => {
@@ -71,18 +81,64 @@ async function fetchCategory() {
         Entertainment.addEventListener('click', () => {
             passUrl(category[5].id);
         });
-        Entertainment.innerHTML = `<a class="text-white href="category.html">${category[5].cat_name}</a>`;
+        Entertainment.innerHTML = `<a class="text-white">${category[5].cat_name}</a>`;
 
         const Health = document.getElementById('category7');
         Health.addEventListener('click', () => {
             passUrl(category[6].id);
         });
         Health.innerHTML = `<a class="text-white href="category.html">${category[6].cat_name}</a>`;
+
+        const Politic1 = document.getElementById('category8');
+        Politic1.addEventListener('click', () => {
+            passUrl(category[0].id);
+        });
+        Politic1.innerHTML = `<a>${category[0].cat_name}</a>`;
+
+        const Sport1 = document.getElementById('category9');
+        Sport1.addEventListener('click', () => {
+            passUrl(category[1].id);
+        });
+        Sport1.innerHTML = `<a>${category[1].cat_name}</a>`;
+
+        const Business1 = document.getElementById('category10');
+        Business1.addEventListener('click', () => {
+            passUrl(category[2].id);
+        });
+        Business1.innerHTML = `<a>${category[2].cat_name}</a>`;
+
+        const Lifestyle1 = document.getElementById('category11');
+        Lifestyle1.addEventListener('click', () => {
+            passUrl(category[3].id);
+        });
+        Lifestyle1.innerHTML = `<a class="text-white" href="category.html">${category[3].cat_name}</a>`;
+
+        const Tech1 = document.getElementById('category12');
+        Tech1.addEventListener('click', () => {
+            passUrl(category[4].id);
+        });
+        Tech1.innerHTML = `<a class="text-white href="category.html">${category[4].cat_name}</a>`;
+
+        const Entertainment1 = document.getElementById('category13');
+        Entertainment1.addEventListener('click', () => {
+            passUrl(category[5].id);
+        });
+        Entertainment1.innerHTML = `<a class="text-white href="category.html">${category[5].cat_name}</a>`;
+
+        const Health1 = document.getElementById('category14');
+        Health1.addEventListener('click', () => {
+            passUrl(category[6].id);
+        });
+        Health1.innerHTML = `<a class="text-white href="category.html">${category[6].cat_name}</a>`;
     } catch(err) {
         console.error(err);
     }
 
     
+    
 };
 
 fetchCategory();
+
+
+
