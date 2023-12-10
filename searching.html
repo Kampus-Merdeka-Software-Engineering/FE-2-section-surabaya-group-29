@@ -11,7 +11,27 @@
             <div class="div">
                 <div class="overlap">
                     <div class="overlap-group">
-                        <div class="text-wrapper">search</div>
+                        <input
+                            type="text"
+                            id="search-input"
+                            autofocus
+                            class="text-wrapper"
+                            style="
+                                color: black;
+                                background-color: rgba(0, 0, 0, 0);
+                                padding: 10px;
+                                border: none;
+                                margin-top: -10px;
+                                width: 85%;
+                            "
+                            placeholder="search"
+                            />
+                            <style>
+                            #search-input:focus {
+                                outline: none;
+                                border: none;
+                            }
+                            </style>
                         <img class="search-light" src="./img/Search_light.svg" />
                     </div>
                     <img class="element-NEWS" src="./img/29-NEWS.svg" />
@@ -28,7 +48,18 @@
                     <div class="text-wrapper-8" id="category7"> </div>
                 </div>
                 <a href="news.html"><div class="rectangle"></div></a>
-                <div class="overlap-2">
+
+                <div class="contentContainer">
+                    <div
+                        id="showing-result"
+                        style="width: 1100px; white-space: wrap"
+                        class="text-wrapper-17"
+                    >
+                        Showing results for ""
+                    </div>
+                    <div class="overlap-4" id="news-list">
+                    </div>
+                <div class="overlap-2" style="margin-top: 20px">
                     <div class="text-wrapper-9" style="font-size:35px">29 NEWS</div>
                     <div class="overlap-3">
                         <div class="text-wrapper-10 rapi" id="category8"></div>
@@ -40,21 +71,11 @@
                     </div>
                     <div class="text-wrapper-16 rapi" id="category14"></div>
                     <div class="copyright copy">&copy; 2023 29 NEWS</div>
-                </div>
-                <div class="overlap-4">
-                    <div class="text-wrapper-17">Showing results for “RevoU”</div>
-                    <a href="news.html"><div class="rectangle-2"></div></a>
-                    <a href="news.html"><div class="rectangle-3"></div></a>
-                    <a href="news.html"><div class="rectangle-4"></div></a>
-                    <div class="text-wrapper-18"><a href="news.html" class="a2">Judul Berita</div></a>
-                    <p class="isi-1">Isi Singkat Berita</p>
-                    <div class="text-wrapper-19"><a href="news.html" class="a2">Judul Berita</div></a>
-                    <p class="isi-2">Isi Singkat Berita</p>                        
-                    <div class="text-wrapper-20"><a href="news.html" class="a2">Judul Berita</div></a>
-                    <p class="isi-3">Isi Singkat Berita</p>
-                </div>                    
+                </div>              
             </div>
         </div>
+        </div>
         <script src = "./js/script.js"></script>
+        <script src = "./js/search.js"></script>
     </body>
 </html>

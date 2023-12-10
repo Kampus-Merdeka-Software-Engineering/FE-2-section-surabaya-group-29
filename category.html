@@ -10,10 +10,12 @@
         <div class="category">
             <div class="div">
                 <div class="overlap">
-                    <div class="overlap-group">
-                        <div class="text-wrapper">search</div>
-                        <img class="search-light" src="./img/Search_light.svg" />
-                    </div>
+                    <a href="/searching.html">
+                        <div class="overlap-group">
+                            <div class="text-wrapper">search</div>
+                            <img class="search-light" src="./img/Search_light.svg" />
+                        </div>
+                    </a>
                     <img class="element-NEWS" src="./img/29-NEWS.svg" />
                     <div class="user-alt-fill-wrapper"><img class="user-alt-fill" src="./img/User_alt_fill.svg" /></div>
                 </div>
@@ -40,47 +42,57 @@
                     <div class="text-wrapper-16 rapi" id="category14"></div>
                     <div class="copyright copy">&copy; 2023 29 NEWS</div>
                 </div>
-                <div class="overlap-berita"></div> 
-                    <a href="news.html"><div class="rectangle-2"></div></a>
-                    <a href="news.html"><div class="rectangle-3"></div></a>
-                    <a href="news.html"><div class="rectangle-5"></div></a>
-                    <a href="news.html"><div class="rectangle-6"></div></a>
-                    <a href="news.html"><div class="rectangle-7"></div></a>
-                    <div class="text-wrapper-34">Politic</div>
-                    <div class="text-wrapper-17"><a href="news.html" class="a2" id="judul-berita">Judul Berita</div></a>
-                    <p class="isi-1">Isi Singkat Berita</p>
-                    <div class="text-wrapper-18"><a href="news.html" class="a2">Judul Berita</div></a>
-                    <p class="isi-2">Isi Singkat Berita</p>                        
-                    <div class="text-wrapper-19"><a href="news.html" class="a2">Judul Berita</div></a>
-                    <p class="isi-3">Isi Singkat Berita</p>
-                    <div class="text-wrapper-20"><a href="news.html" class="a2">Judul Berita</div></a>
-                    <p class="isi-4">Isi Singkat Berita</p>
-                    <div class="rectangle-4"></div>
+
+                <div class="" id="category-container">
+                    <div class="overlap-berita"></div> 
+                        <a href="news.html" id="main-news-link"><div class="rectangle-2">
+                            <img src="" style='position: absolute; width: 100%; height: 100%;' id="main-news-image" alt="">
+                        </div></a>
+                        <a class="rectangle-3" id="title-image-container-1"><img src="" style='position: absolute; width: 100%; height: 100%;' id="title-image-1" alt=""></a>
+                        <a class="rectangle-5" id="title-image-container-2"><img src="" style='position: absolute; width: 100%; height: 100%;' id="title-image-2" alt=""></a>
+                        <a class="rectangle-6" id="title-image-container-3"><img src="" style='position: absolute; width: 100%; height: 100%;' id="title-image-3" alt=""></a>
+                        <a class="rectangle-7" id="title-image-container-4"><img src="" style='position: absolute; width: 100%; height: 100%;' id="title-image-4" alt=""></a>
+                        <div class="text-wrapper-34" id="category-title"></div>
+                        <div class="news-container">
+                            <div class="text-wrapper-17"><a href="news.html" class="a2" id="title-1">Judul Berita</div></a>
+                            <!-- <p class="isi-1">Isi Singkat Berita</p> -->
+                            <div class="text-wrapper-18"><a href="news.html" class="a2" id="title-2">Judul Berita</div></a>
+                            <!-- <p class="isi-2">Isi Singkat Berita</p>                         -->
+                            <div class="text-wrapper-19"><a href="news.html" class="a2" id="title-3">Judul Berita</div></a>
+                            <!-- <p class="isi-3">Isi Singkat Berita</p> -->
+                            <div class="text-wrapper-20"><a href="news.html" class="a2" id="title-4">Judul Berita</div></a>
+                            <!-- <p class="isi-4">Isi Singkat Berita</p> -->
+                        </div>
+    
+                        <div class="rectangle-4" style="position: relative">
+                    </div>
                     <p class="INI-POKOKNYA-JUDUL">
-                        <span class="span"><a href="news.html" class="a2">INI POKOKNYA JUDUL UNTUK&nbsp;&nbsp;BERITANYA YA, KIRA KIRA BUATNYA DUA - TIGA BARIS<br/></a></span>
+                        <span class="span"><a href="news.html" class="a2" id="main-news-title"><br/></a></span>
                         <span class="text-wrapper-32"><br /></span>
-                        <span class="text-wrapper-33">Isi Singkat Berita</span>
+                        <span class="text-wrapper-33" id="main-news-description"></span>
                     </p>
                 <div class="overlap-4"></div>    
                     <div class="rectangle-border"></div>
                     <div class="text-wrapper-21">TRENDING</div>
-                    <p class="text-wrapper-22">01</p>
-                    <div class="text-wrapper-23"><a href="news.html" class="a2">Nantinya ini adalah judul 1</div></a>
-                    <p class="text-wrapper-24">02</p>
-                    <div class="text-wrapper-25"><a href="news.html" class="a2">Nantinya ini adalah judul 2</div></a>
-                    <p class="text-wrapper-26">03</p>
-                    <div class="text-wrapper-27"><a href="news.html" class="a2">Nantinya ini adalah judul 3</div></a>
-                    <p class="text-wrapper-28">04</p>
-                    <div class="text-wrapper-29"><a href="news.html" class="a2">Nantinya ini adalah judul 4</div></a>
-                    <p class="text-wrapper-30">05</p>
-                    <div class="text-wrapper-31"><a href="news.html" class="a2">Nantinya ini adalah judul 5</div></a>
+                    <p class="text-wrapper-22" id="trending-1">01</p>
+                    <div class="text-wrapper-23"><a href="news.html" class="a2" id="trending-link-1">Nantinya ini adalah judul 1</div></a>
+                    <p class="text-wrapper-24" id="trending-2">02</p>
+                    <div class="text-wrapper-25"><a href="news.html" class="a2" id="trending-link-2">Nantinya ini adalah judul 2</div></a>
+                    <p class="text-wrapper-26" id="trending-3">03</p>
+                    <div class="text-wrapper-27"><a href="news.html" class="a2" id="trending-link-3">Nantinya ini adalah judul 3</div></a>
+                    <p class="text-wrapper-28" id="trending-4">04</p>
+                    <div class="text-wrapper-29"><a href="news.html" class="a2" id="trending-link-4">Nantinya ini adalah judul 4</div></a>
+                    <p class="text-wrapper-30" id="trending-5">05</p>
+                    <div class="text-wrapper-31"><a href="news.html" class="a2" id="trending-link-5">Nantinya ini adalah judul 5</div></a>
                     
-                    </div>    
+                </div>    
+                </div>
                 </div>
             </div>
         </div>
 
         <script src = "./js/script.js"></script>
+        <script src = "./js/category.js"></script>
     </body>
 </html>
 
