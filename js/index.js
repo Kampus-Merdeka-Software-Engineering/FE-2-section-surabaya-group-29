@@ -1,6 +1,6 @@
 async function fetchNews() {
     try{
-        const response = await fetch(`${API_BASE_URL}/berita`)
+        const response = await fetch(`${API_BASE_URL}/berita`);
         const news = await response.json();
         console.log(news);
 
@@ -25,7 +25,7 @@ async function fetchNews() {
         const Foto4 = document.getElementById('foto4');
         Foto4.src = `${news[3].foto}`;
     } catch(err) {
-        console.error(err);
+        console.log(err);
     }
 };
 

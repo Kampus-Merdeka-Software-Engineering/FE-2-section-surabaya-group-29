@@ -1,6 +1,7 @@
 
 const API_BASE_URL = 'https://be-2-section-surabaya-group-29-production.up.railway.app';
 
+
 //setelah category ditekan
 function passUrl(id) {
     window.location.href = `category.html?id=${id}`;
