@@ -78,7 +78,7 @@ async function fetchCategory() {
         Lifestyle1.addEventListener('click', () => {
             passUrl(category[3].id);
         });
-        Lifestyle1.innerHTML = `<a class="text-white" href="category.html">${category[3].cat_name}</a>`;
+        Lifestyle1.innerHTML = `<a>${category[3].cat_name}</a>`;
 
         const Tech1 = document.getElementById('category12');
         Tech1.addEventListener('click', () => {

@@ -31,7 +31,7 @@ async function fetchCategory() {
       mainNewsTitle.href = "news.html?id=" + newsList[0].id;
   
       const mainNewsDescription = document.getElementById("main-news-description");
-      mainNewsDescription.innerHTML = newsList[0].deskripsi;
+      mainNewsDescription.innerHTML = newsList[0].deskripsi.slice(0,190)+"...";
   
       const mainNewsImage = document.getElementById("main-news-image");
       mainNewsImage.src = newsList[0].foto;
@@ -46,7 +46,7 @@ async function fetchCategory() {
           trendingNumber.innerHTML = "";
           trendingLink.innerHTML = "";
         } else {
-          trendingLink.innerHTML = newsList[i].judul;
+          trendingLink.innerHTML = newsList[i].judul.slice(0,20) + "...";
           trendingLink.href = "news.html?id=" + newsList[i].id;
         }
       }
@@ -62,7 +62,7 @@ async function fetchCategory() {
           linkImageContainer.removeChild(linkImage);
           linkImageContainer.style.display = "none";
         } else {
-          link.innerHTML = newsList[i + 1].judul;
+          link.innerHTML = newsList[i + 1].judul.slice(0,40) + "...";
           link.href = "news.html?id=" + newsList[i + 1].id;
           linkImage.src = newsList[i + 1].foto;
           linkImageContainer.href = "news.html?id=" + newsList[i + 1].id;

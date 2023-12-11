@@ -1336,7 +1336,7 @@ body {
   
   .category .text-wrapper-17 {
     position: absolute;
-    width: 417px;
+    width: 250px;
     top: 770px;
     left: 65px;
     font-family: "Inter-Bold", Helvetica;
@@ -1363,7 +1363,7 @@ body {
   .category .text-wrapper-18 {
     left: 365px;
     position: absolute;
-    width: 417px;
+    width: 250px;
     top: 770px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
@@ -1389,7 +1389,7 @@ body {
   .category .text-wrapper-19 {
     left: 665px;
     position: absolute;
-    width: 417px;
+    width: 250px;
     top: 770px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
@@ -1415,7 +1415,7 @@ body {
   .category .text-wrapper-20 {
     left: 965px;
     position: absolute;
-    width: 417px;
+    width: 250px;
     top: 770px;
     font-family: "Inter-Bold", Helvetica;
     font-weight: 700;
@@ -1621,7 +1621,6 @@ body {
     background-color: #ffffff;
     overflow: hidden;
     width: 1280px;
-    height: 1080px;
     position: relative;
   }
   
