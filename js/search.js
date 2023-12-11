@@ -17,12 +17,12 @@ document.getElementById("search-input").addEventListener("input", (event) => {
       for (i = 0; i < newsList.length; i++) {
         classNews = `<div class="news-container">
               <div class="left-news">
-              <a href="#">
+              <a href="news.html?id= + ${newsList[i].id}">
                   <img class="news-image" src="${newsList[i].foto}" />
               </a>
               </div>
               <div class="right-news">
-              <a href="news/${newsList[i].id}" class="news-title">${newsList[i].judul}</a>
+              <a href="news.html?id= + ${newsList[i].id}" class="news-title">${newsList[i].judul}</a>
               <p class="news-description">${newsList[i].deskripsi}</p>
               </div>
           </div>`;
